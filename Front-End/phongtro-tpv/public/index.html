@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PHÒNG TRỌ THÀNH PHỐ VINH</title>
+    <link rel="icon" href="https://cdn.printgo.vn/uploads/media/774255/thiet-ke-logo-nha-dat-2_1586938113.jpg" type="image/png" sizes="16x16">
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFLq6ww-zE69Agx7KUZysAt67HmR46JU&signed_in=true"></script>
+    
+</head>
+<body>
+        <div class="overlay">
+            <div class="loading">Loading&#8230;</div>
+        </div>
+    <div id="root"></div>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#wrapper").toggleClass("toggled");
+            setTimeout(()=>{
+                $('.overlay').html('')
+            },1000)
+            $(".slide-toggle").click(function(){
+                $(".box").animate({
+                width: "toggle"
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>
